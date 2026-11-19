@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(70, 105, 149);
+}
+p {
+    color: #7EE8FA;
+}
+header {
+    margin-right: 1vw;
+    margin-left: 1vw;
+    height: 10vh;
+    background-color: #4464AD;
+    border: solid black;
+}
