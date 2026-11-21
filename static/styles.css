@@ -3,11 +3,27 @@ body {
 }
 p {
     color: #7EE8FA;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 header {
-    margin-right: 1vw;
-    margin-left: 1vw;
-    height: 10vh;
+    margin-top: 3vw;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    padding: 2vw 3vw;
+
     background-color: #4464AD;
-    border: solid black;
+    border: dashed black;
+}
+.content {
+    margin-right: 3vw;
+    margin-left: 3vw;
+    height: 50vh;
+
+    background-color: #4464AD;
+    border: dashed black;
+    border-top: none;
+
+    padding: 3vw;
+    padding-top: 2vw;
 }

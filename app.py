@@ -7,7 +7,3 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return render_template("index.html")
-
-@app.route("/static/")
-def style():
-    return static_file("")
