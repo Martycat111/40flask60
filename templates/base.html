@@ -5,6 +5,23 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
   </head>
   <body>
-    {% block content %}{% endblock %}
+    <header>
+        <p>Header</p>
+    </header>
+    <div class="content">
+        <nav>
+            <!-- Left side navigation -->
+            <a href="/">
+                <img src="img/Home.png">
+            </a>
+            <a href="/Games">
+                <img src="img/Xbox360.png">
+            </a>
+        </nav>
+        <div class="right">
+            <!-- Content on the right side -->
+            {% block content %}{% endblock %}
+        </div>
+    </div>
   </body>
 </html>

@@ -4,7 +4,10 @@ body {
 p {
     color: #7EE8FA;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+}
+h1 {
+    color: #7EE8FA;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 header {
     margin-top: 3vw;
@@ -18,12 +21,45 @@ header {
 .content {
     margin-right: 3vw;
     margin-left: 3vw;
-    height: 50vh;
+    height: 80vh;
 
     background-color: #4464AD;
     border: dashed black;
     border-top: none;
 
+    display: flex;
+}
+nav {
     padding: 3vw;
     padding-top: 2vw;
+    width: 8vw;
+    border-right: dashed black;
+}
+nav a img{
+    width: 8vw;
+}
+.right {
+    padding: 3vw;
+    padding-top: 2vw;
+    width: 63vw;
+}
+
+
+.gameslist {
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    gap: 1vw 1vw;
+}
+
+.game img {
+    width: 30vw;
+}
+.game {
+    width: 30vw;
+    height: 20vh;
+    background-color: aliceblue;
+}
+.game p {
+    color: black;
+    font-weight: bold;
 }
