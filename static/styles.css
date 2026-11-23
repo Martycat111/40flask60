@@ -41,7 +41,7 @@ nav a img{
 .right {
     padding: 3vw;
     padding-top: 2vw;
-    width: 63vw;
+    width: 71vw;
 }
 
 
@@ -49,17 +49,27 @@ nav a img{
     display: grid;
     grid-template-columns: 30vw 30vw;
     gap: 1vw 1vw;
+    justify-self: center;
 }
 
 .game img {
     width: 30vw;
+    height: 15vh;
 }
 .game {
     width: 30vw;
     height: 20vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+
     background-color: aliceblue;
 }
 .game p {
     color: black;
     font-weight: bold;
+    margin: 0;
+    margin-left: 1vw;
+    margin-top: 1vh;
 }

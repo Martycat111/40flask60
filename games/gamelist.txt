@@ -1,0 +1,3 @@
+{
+    "names": ["Froken", "Bingbong", "Flappy santa spidercat"]
+}

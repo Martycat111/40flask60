@@ -1,6 +1,6 @@
 import flask
 from flask import Flask, render_template, send_file
-import os
+import os, json
 
 app = Flask(__name__)
 
@@ -14,10 +14,20 @@ def image(path):
 
 @app.route('/Games')
 def gamespage():
-    folder = "games/"
+    folder = "games"
     subfolders = [ f.path for f in os.scandir(folder) if f.is_dir() ]
-    print(subfolders)
-    return render_template("games.html", games=subfolders)
+    with open("games/gamelist.txt") as g:
+        Json = g.read()
+        data = json.loads(Json)
+    return render_template("games.html", 
+                           games=subfolders, 
+                           names=data["names"], 
+                           gamelength=len(subfolders))
+
+@app.route('/games/<path:path>')
+def gamepage(path):
+    return send_file("games/" + path)
+
 
 if __name__ == "__main__":
     app.run()
