@@ -5,11 +5,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
   </head>
   <body>
-    <header>
+    <header class="border bg">
         <p>Header</p>
     </header>
     <div class="content">
-        <nav>
+        <nav class="border bg">
             <!-- Left side navigation -->
             <a href="/">
                 <img src="img/Home.png">
@@ -18,7 +18,7 @@
                 <img src="img/Xbox360.png">
             </a>
         </nav>
-        <div class="right">
+        <div class="right border bg">
             <!-- Content on the right side -->
             {% block content %}{% endblock %}
         </div>

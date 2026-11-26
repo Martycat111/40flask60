@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(70, 105, 149);
+    background-color: black;
 }
 p {
     color: #7EE8FA;
@@ -9,31 +9,31 @@ h1 {
     color: #7EE8FA;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-header {
-    margin-top: 3vw;
-    margin-right: 3vw;
-    margin-left: 3vw;
-    padding: 2vw 3vw;
 
+.bg {
     background-color: #4464AD;
-    border: dashed black;
+}
+
+.border {
+    border: dashed #46a9bb;
+    border-radius: 1vw;
+}
+
+header {
+    margin: 3vw;
+    padding: 2vw 3vw;
 }
 .content {
     margin-right: 3vw;
     margin-left: 3vw;
 
-    background-color: #4464AD;
-    border: dashed black;
-    border-top: none;
-
     display: flex;
-
+    gap: 1vw;
 }
 nav {
     padding: 3vw;
     padding-top: 2vw;
     width: 8vw;
-    border-right: dashed black;
 }
 nav a img{
     width: 8vw;
@@ -67,7 +67,7 @@ nav a img{
 }
 .game p {
     color: blue;
-    font-size: x-large;
+    font-size: large;
     -webkit-text-stroke: 0.1vw black;
 
     font-weight: bold;
