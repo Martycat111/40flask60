@@ -1,0 +1,12 @@
+body {
+    background-color: grey;
+}
+* {
+    color: blueviolet;
+    font-size: 2vw;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+a {
+    color: yellow;
+}

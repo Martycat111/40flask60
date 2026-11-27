@@ -20,6 +20,8 @@ h1 {
 }
 
 header {
+    background: linear-gradient(black, #4464);
+
     margin: 3vw;
     padding: 2vw 3vw;
 }
@@ -33,18 +35,68 @@ header {
 nav {
     padding: 3vw;
     padding-top: 2vw;
-    width: 8vw;
+    width: 100px;
 }
 nav a img{
-    width: 8vw;
+    width: 100px;
 }
 .right {
+    display: flex;
+    gap: 2vw;
     padding: 3vw;
     padding-top: 2vw;
     width: 71vw;
 }
 
+/* index.html */
 
+.box {
+    width: 12vw;
+    padding: 1vw;
+    justify-content: center;
+
+}
+
+.fav-devices {
+    height: fit-content;
+}
+.fav-devices button {
+    width: fill;
+    font-size: 1vw;
+}
+
+.item-stack {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2vw;
+    height: fit-content;
+}
+
+.cool-sites {
+    height: fit-content;
+}
+
+.ram {
+    height: fit-content;
+    position: relative;
+}
+
+.ram img {
+    position: absolute;
+    right: -3.5vw;
+    bottom: -3.5vh;
+    width: 7vw;
+}
+
+.red-text {
+    background-color: red;
+    color: black;
+    width: fit-content;
+    justify-self: center;
+}
+
+/* games.html */
 .gameslist {
     display: grid;
     grid-template-columns: 30vw 30vw;

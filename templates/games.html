@@ -1,14 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
     <!-- Content on the right side-->
-    <h1>Games</h1>
-    <!-- List Games available -->
-    <div class="gameslist">
-        {% for i in range(gamelength) %}
-            <a href="{{games[i] + "/index.html"}}" class="game">
-                <img src="{{ "img/" + games[i] + ".png"}}">
-                <p>{{ names[i] }}</p>
-            </a>
-        {% endfor %}
+    <div class="bg border">
+        <h1>Games</h1>
+        <!-- List Games available -->
+        <div class="gameslist">
+            {% for i in range(gamelength) %}
+                <a href="{{games[i] + "/index.html"}}" class="game">
+                    <img src="{{ "img/" + games[i] + ".png"}}">
+                    <p>{{ names[i] }}</p>
+                </a>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
